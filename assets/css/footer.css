@@ -1,0 +1,41 @@
+.main_footer {
+    background-color: rgb(51, 51, 51);
+    padding: 15px 15px 0px 15px;
+}
+
+.main_footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sitemap {
+    display: none;
+}
+
+.main_footer .sitemap div.col {
+    padding: 0px 4px;
+}
+
+.main_footer .sitemap a {
+    color: rgb(102, 102, 102);
+}
+
+.center_links>li>a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.subscribe_box {
+    /* border-right: 1px solid rgb(102, 102, 102); */
+}
+
+.subscribe_box>h3 {
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    .sitemap {
+        display: block;
+    }
+}

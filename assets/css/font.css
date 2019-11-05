@@ -1,0 +1,44 @@
+/* font face links ============================== */
+@font-face {
+    font-family: 'GESSTwo';
+    src: url('../fonts/GESSTwoLight-Light.eot');
+    src: url('../fonts/GESSTwoLight-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GESSTwoLight-Light.woff') format('woff'),
+        url('../fonts/GESSTwoLight-Light.ttf') format('truetype'),
+        url('../fonts/GESSTwoLight-Light.svg#et-line') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GESSTwo';
+    src: url('../fonts/GESSTwoBold-Bold.eot');
+    src: url('../fonts/GESSTwoBold-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GESSTwoBold-Bold.woff') format('woff'),
+        url('../fonts/GESSTwoBold-Bold.ttf') format('truetype'),
+        url('../fonts/GESSTwoBold-Bold.svg#et-line') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueLTStd-Roman.svg#et-line') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueLTStd-Bd.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueLTStd-Bd.svg#et-line') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
