@@ -12,6 +12,7 @@
 @import url("home.css");
 @import url("header.css");
 @import url("footer.css");
+@import url("experts.css");
 
 /* HTML tags ============================== */
 html {
@@ -195,11 +196,31 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* buttons ============================== */
+/* inputs ============================== */
 .form-control {}
 
 .form-control:focus {
     border-color: rgb(223, 181, 11);
     -webkit-box-shadow: 0 6px 12px 0 rgba(223, 181, 11, 0.35);
     box-shadow: 0 6px 12px 0 rgba(223, 181, 11, 0.35);
+}
+
+/* editional classes ============================== */
+.content_margin {
+    margin-bottom: 489px;
+}
+
+.page_title {
+    background-image: url(../images/pagetitle_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 115px;
+    margin: 0px -15px 30px -15px;
+    padding: 15px;
+}
+
+.page_title h2 {
+    font-weight: bold;
+    color: rgba(223, 181, 11, 1);
 }
