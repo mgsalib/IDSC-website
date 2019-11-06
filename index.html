@@ -40,6 +40,11 @@
             $("#main_content").loadHTML('pages/home.html');
             $("#main_footer").loadHTML('pages/footer.html');
         });
+
+        function PagesNavigation (evt) {
+            var PageName = evt.dataset.pagename;
+            $("#main_content").loadHTML('pages/'+ PageName +'.html');
+        }
     </script>
 
     <!-- wow animation -->
