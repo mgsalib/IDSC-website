@@ -23,6 +23,22 @@
     transform: rotate(180deg);
 }
 
+[dir=ltr] .main_swiper .swiper-button-prev {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+[dir=ltr] .main_swiper .swiper-button-next {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .swiper-pagination-bullet {
     background: rgb(223, 181, 11);
     opacity: 1;
@@ -53,6 +69,10 @@
     padding: 16px 32px;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: right;
+}
+
+[dir=ltr] .main_swiper .text {
+    text-align: left;
 }
 
 .main_swiper .text>label {
@@ -87,6 +107,11 @@
         right: 58px;
         width: calc(100% - 30%);
     }
+
+    [dir=ltr] .main_swiper .text {
+        left: 58px;
+        right: auto;
+    }
 }
 
 @media (min-width: 992px) {
@@ -101,6 +126,11 @@
         right: 90px;
         bottom: 45px;
         width: calc(100% - 50%);
+    }
+
+    [dir=ltr] .main_swiper .text {
+        left: 90px;
+        right: auto;
     }
 }
 
@@ -551,6 +581,12 @@
     background-color: rgb(163, 63, 42);
 }
 
+[dir=ltr] .data_info_box>aside>h3::after {
+    left: 0px;
+    right: auto;
+    background-color: rgb(163, 63, 42);
+}
+
 .data_info_box>aside>p {
     margin: 0px;
     font-size: 14px;
@@ -603,9 +639,18 @@
     text-align: right;
 }
 
+[dir=ltr] .article_swiper .swiper-slide>div>h3,
+[dir=ltr] .article_swiper .swiper-slide>div>p,
+[dir=ltr] .article_swiper .swiper-slide>div>span {
+    text-align: left;
+}
+
 .article_swiper .swiper-button-next,
 .article_swiper .swiper-button-prev {
-    background-image: url(../images/chevron.svg);
+    background-image: url(../images/chevron_red.png);
+    width: 45px;
+    height: 45px;
+    background-size: cover;
 }
 
 .article_swiper .swiper-button-prev {
@@ -711,7 +756,10 @@
 
 .quotes_swiper .swiper-button-next,
 .quotes_swiper .swiper-button-prev {
-    background-image: url(../images/chevron.svg);
+    background-image: url(../images/chevron_red.png);
+    width: 45px;
+    height: 45px;
+    background-size: cover;
 }
 
 .quotes_swiper .swiper-button-prev {

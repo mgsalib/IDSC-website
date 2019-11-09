@@ -1,103 +1,125 @@
-<div class="experts container-fluid content_margin">
+<div class="experts container content_margin">
 
     <!-- page title -->
-    <div class="page_title d-flex flex-column justify-content-center">
-        <h2 class="container">الباحثين</h2>
+    <div class="page_title d-flex justify-content-center">
+        <h2>الباحثين</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-2"></div>
+        <div class="col-12 col-sm-8">
+            <p class="text-center">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص
+                أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ
+                طبيعياَ
+                -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي"
+            </p>
+        </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="expert_searchbar row">
+
+        <!-- search enging bar -->
+        <div class="col-12 mb-2 p-0">
+            <input type="text" class="form-control" id="ExpertsSearch" placeholder="ادخل أسم الباحث">
+        </div>
+
+        <!-- advanced search -->
+        <div class="col-12 p-0">
+            <div class="text-left">
+                <a data-toggle="collapse" class="d-inline-block mb-1 txt_gray-70" href="#Experts_AdvSearch"
+                    role="button" aria-expanded="false" aria-controls="Experts_AdvSearch">
+                    بحث متقدم
+                </a>
+
+                <div class="row collapse" id="Experts_AdvSearch">
+
+                    <div class="col-12 col-sm-4">
+                        <div class="form-group">
+                            <label class="float-right" for="topics">موضوعات</label>
+                            <select class="form-control" id="topics">
+                                <option selected>- أختر -</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="form-group">
+                            <label class="float-right" for="research_programs">
+                                برامج البحث</label>
+                            <select class="form-control" id="research_programs">
+                                <option selected>- أختر -</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="form-group">
+                            <label class="float-right" for="language">اللغة</label>
+                            <select class="form-control" id="language">
+                                <option selected>- أختر -</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn bg_color_2">بحث</button>
+                        <button type="button" class="btn bg_color_3">ألغاء</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- page content -->
-    <div class="container">
-        <div class="row">
+    <div class="row">
 
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-            <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
-                <span>
-                    <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
-                </span>
-                <ul>
-                    <li class="font-weight-bold">name</li>
-                    <li>title</li>
-                    <li>mail</li>
-                </ul>
-            </div>
-
-
+        <!-- letter bar -->
+        <div class="col-12 text-right mb-3">
+            <span class="bg_gray-10 d-flex py-1 px-3 font-weight-bold">
+                A
+            </span>
         </div>
+
+        <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
+            <span>
+                <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
+            </span>
+            <ul>
+                <li class="font-weight-bold">name</li>
+                <li>title</li>
+                <li>mail</li>
+            </ul>
+        </div>
+
+        <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
+            <span>
+                <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
+            </span>
+            <ul>
+                <li class="font-weight-bold">name</li>
+                <li>title</li>
+                <li>mail</li>
+            </ul>
+        </div>
+
+        <div class="experts_card d-flex flex-row col-12 col-sm-4 my-3">
+            <span>
+                <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
+            </span>
+            <ul>
+                <li class="font-weight-bold">name</li>
+                <li>title</li>
+                <li>mail</li>
+            </ul>
+        </div>
+
     </div>
+
 </div>

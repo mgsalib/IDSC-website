@@ -1,5 +1,11 @@
 .experts {}
 
+.expert_searchbar {
+    background-color: rgb(230, 230, 230);
+    margin: 0px 0px 15px 0px;
+    padding: 15px;
+}
+
 .experts_card {}
 
 .experts_card>span {
