@@ -24,28 +24,16 @@ body {
     text-align: right;
     font-family: GESSTwo, HelveticaNeue;
     font-size: 14px;
-    margin-top: 83px;
+    margin-top: 118px;
 }
 
 [dir="ltr"] body {
     font-family: HelveticaNeue, GESSTwo;
 }
 
-@media (min-width: 429px) {
-    body {
-        margin-top: 124px;
-    }
-}
-
-@media (min-width: 509px) {
-    body {
-        margin-top: 177px;
-    }
-}
-
 @media (min-width: 992px) {
     body {
-        margin-top: 182px;
+        margin-top: 180px;
     }
 }
 
@@ -207,9 +195,62 @@ body {
 
 /* editional classes ============================== */
 .content_margin {
-    margin-bottom: 489px;
+    margin-bottom: 697px;
 }
 
+@media (min-width: 331px) {
+    .content_margin {
+        margin-bottom: 676px;
+    }
+}
+
+@media (min-width: 576px) {
+    .content_margin {
+        margin-bottom: 472px;
+    }
+}
+
+@media (min-width: 606px) {
+    .content_margin {
+        margin-bottom: 443px;
+    }
+}
+
+@media (min-width: 628px) {
+    .content_margin {
+        margin-bottom: 422px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content_margin {
+        margin-bottom: 543px;
+    }
+}
+
+@media (min-width: 1011px) {
+    .content_margin {
+        margin-bottom: 522px;
+    }
+}
+
+@media (min-width: 1093px) {
+    .content_margin {
+        margin-bottom: 501px;
+    }
+}
+
+@media (min-width: 1107px) {
+    .content_margin {
+        margin-bottom: 480px;
+    }
+}
+
+@media (min-width: 1194px) {
+    .content_margin {
+        margin-bottom: 459px;
+    }
+}
 .page_title {
     background-image: url(../images/pagetitle_bg.png);
     background-repeat: no-repeat;

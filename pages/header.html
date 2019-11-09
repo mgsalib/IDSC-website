@@ -59,7 +59,7 @@
         </button>
 
         <div class="collapse navbar-collapse pr-sm-2" id="navbarSupportedContent">
-            <ul class="navbar-nav container p-0 justify-content-center">
+            <ul class="navbar-nav container p-lg-0 justify-content-center">
 
                 <!-- main menu 01 -->
                 <li class="nav-item dropdown">
@@ -244,7 +244,6 @@
 </div>
 <script>
     $('.up').on('click', function () {
-        debugger;
         $('.main_content').animate({
             'font-size': '+=1'
         });
@@ -255,4 +254,8 @@
             'font-size': '-=1'
         });
     });
+
+    $('div.dropdown-menu a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
 </script>

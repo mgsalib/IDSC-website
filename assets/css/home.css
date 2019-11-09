@@ -654,7 +654,6 @@
 }
 
 .quotes {
-    height: calc(100vh - 99px);
     background-image: url('../images/SayAboutIDSC_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
