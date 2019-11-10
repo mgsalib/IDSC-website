@@ -12,7 +12,7 @@
 @import url("home.css");
 @import url("header.css");
 @import url("footer.css");
-@import url("expert_details.css");
+@import url("view_details.css");
 
 /* HTML tags ============================== */
 html {
@@ -324,7 +324,7 @@ body {
     transform: scale(-1, 1);
 }
 
-.searchbar {
+.list_searchbar {
     background-color: rgb(230, 230, 230);
     margin: 0px 0px 15px 0px;
     padding: 15px;
@@ -558,10 +558,7 @@ body {
     padding-left: 1rem !important
 }
 
-.pb-3,
-.py-3 {
-    padding-bottom: 1rem !important
-}
+
 
 .pl-3,
 .px-3 {
@@ -582,10 +579,7 @@ body {
     padding-right: 1.5rem !important
 }
 
-.pb-4,
-.py-4 {
-    padding-bottom: 1.5rem !important
-}
+
 
 .pl-4,
 .px-4 {
@@ -606,10 +600,7 @@ body {
     padding-right: 3rem !important
 }
 
-.pb-5,
-.py-5 {
-    padding-bottom: 3rem !important
-}
+
 
 .pl-5,
 .px-5 {
@@ -919,10 +910,7 @@ body {
         padding-right: 0 !important
     }
 
-    .pb-sm-0,
-    .py-sm-0 {
-        padding-bottom: 0 !important
-    }
+    
 
     .pl-sm-0,
     .px-sm-0 {
@@ -943,10 +931,7 @@ body {
         padding-right: .25rem !important
     }
 
-    .pb-sm-1,
-    .py-sm-1 {
-        padding-bottom: .25rem !important
-    }
+    
 
     .pl-sm-1,
     .px-sm-1 {
