@@ -18,9 +18,9 @@
 }
 
 /* background  ============================== */
-.bg_color_1 {
+/* .bg_color_1 {
     background-color: rgb(72, 197, 181) !important;
-}
+} */
 
 .bg_color_2 {
     background-color: rgb(223, 181, 11) !important;
@@ -79,9 +79,9 @@
 }
 
 /* text color  ============================== */
-.txt_color_1 {
+/* .txt_color_1 {
     color: rgb(72, 197, 181) !important;
-}
+} */
 
 .txt_color_2 {
     color: rgb(223, 181, 11) !important;
@@ -137,4 +137,61 @@
 
 .txt_black {
     color: rgb(0, 0, 0) !important;
+}
+
+/* border color  ============================== */
+.border_color_2 {
+    border-color: rgb(223, 181, 11) !important;
+}
+
+.border_color_3 {
+    border-color: rgb(203, 32, 40) !important;
+}
+
+.border_white {
+    border-color: rgb(255, 255, 255) !important;
+}
+
+.border_gray-5 {
+    border-color: rgb(242, 242, 242) !important;
+}
+
+.border_gray-10 {
+    border-color: rgb(230, 230, 230) !important;
+}
+
+.border_gray-20 {
+    border-color: rgb(204, 204, 204) !important;
+}
+
+.border_gray-30 {
+    border-color: rgb(179, 179, 179) !important;
+}
+
+.border_gray-40 {
+    border-color: rgb(153, 153, 153) !important;
+}
+
+.border_gray-50 {
+    border-color: rgb(128, 128, 128) !important;
+}
+
+.border_gray-60 {
+    border-color: rgb(102, 102, 102) !important;
+}
+
+.border_gray-70 {
+    border-color: rgb(77, 77, 77) !important;
+}
+
+.border_gray-80 {
+    border-color: rgb(51, 51, 51) !important;
+}
+
+.border_gray-90 {
+    border-color: rgb(26, 26, 26) !important;
+}
+
+.border_black {
+    border-color: rgb(0, 0, 0) !important;
 }
