@@ -197,8 +197,8 @@ body {
 /* breadcrumb ============================== */
 .breadcrumb {
     background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(230, 230, 230);
     border-radius: 0px;
+    margin: 0px;
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -206,6 +206,7 @@ body {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
     padding: 0px 8px;
     color: rgba(179, 179, 179);
 }
@@ -342,6 +343,14 @@ body {
 
 .archive_view>span.border {
     width: 94px;
+}
+
+.archive_view>a.largeIMG {
+    max-width: 175px;
+}
+
+.archive_view>a.largeIMG>span {
+    max-width: 100%;
 }
 
 .archive_view>span.border>[day] {

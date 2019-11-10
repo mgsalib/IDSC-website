@@ -23,6 +23,11 @@
     color: rgb(128, 128, 128);
 }
 
+.expert_details_header h1{
+    line-height: 54px;
+}
+
+
 .contact_info>ul {
     margin: 0px 0px 15px 0px;
     padding: 0px;
