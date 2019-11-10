@@ -186,7 +186,7 @@ body {
 }
 
 /* inputs ============================== */
-.form-control {}
+/* .form-control {} */
 
 .form-control:focus {
     border-color: rgb(223, 181, 11);
@@ -400,7 +400,7 @@ body {
     color: rgb(128, 128, 128);
 }
 
-.archive_view>ul>li[archive_view_social] {}
+/* .archive_view>ul>li[archive_view_social] {} */
 
 .archive_view>ul>li[archive_view_social]>a {
     display: inline-block;
