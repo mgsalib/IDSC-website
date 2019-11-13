@@ -661,6 +661,22 @@
     transform: rotate(180deg);
 }
 
+[dir=ltr] .article_swiper .swiper-button-prev {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+[dir=ltr] .article_swiper .swiper-button-next {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .video_box iframe {
     width: 100%;
     height: calc(100% - 20%);
@@ -763,6 +779,22 @@
 }
 
 .quotes_swiper .swiper-button-prev {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+[dir=ltr] .quotes_swiper .swiper-button-prev {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+[dir=ltr] .quotes_swiper .swiper-button-next {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
