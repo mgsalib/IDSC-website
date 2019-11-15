@@ -1,0 +1,58 @@
+.lightbox {
+    position: relative;
+}
+
+.mySlides {
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.demo {
+    max-height: 100px;
+    overflow: hidden;
+    margin: 0px 0px 15px 0px;
+
+}
+
+.mySlides>img,
+.demo>img {
+    width: 100%;
+    height: auto;
+}
+
+.mySlides>video {
+    height: 100%;
+}
+
+.lightbox a.prev,
+.lightbox a.next {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 10;
+    top: 200px;
+    font-size: 24px;
+    padding: 9px 4px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    color: rgb(203, 32, 40);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+}
+
+.lightbox a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255) !important;
+}
+
+.lightbox a.prev {
+    right: 45px;
+}
+
+.lightbox a.next {
+    left: 45px;
+}

@@ -1,0 +1,135 @@
+<div class="album_videos container-fluid content_margin">
+
+    <!-- breadcrumb -->
+    <div class="row border border_gray-10 mb-3">
+        <nav class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="#">الوسائط التكنولوجية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">فيديو</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- page details content -->
+    <div class="container">
+
+        <!-- page title -->
+        <div class="page_title d-flex justify-content-center">
+            <h2>فيديو</h2>
+        </div>
+
+        <!-- Images albums -->
+        <div class="row">
+            <div class="archive_view d-flex flex-row col-12 col-sm-6 my-3">
+                <a href="#" class="largeIMG" data-toggle="modal" data-target="#myModal" onclick="currentSlide(1)">
+                    <span>
+                        <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
+                    </span>
+                </a>
+                <ul>
+                    <li archive_view_name><a href="#" data-toggle="modal" data-target="#myModal"
+                            onclick="currentSlide(1)">الأسم بالكامل</a></li>
+                    <li archive_view_title>الوظيفة الحالية</li>
+                    <li archive_view_subtitle>عنوان فرعي</li>
+                    <li archive_view_date>99.99.9999</li>
+                    <li archive_view_social>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myModal"
+        aria-hidden="true">
+
+        <div class="lightbox modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mySlides">
+                        <video controls>
+                            <source src="mov_bbb.mp4" type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="row px-2 mt-2">
+                        <div class="demo col-12 col-sm-3 px-2">
+                            <video controls>
+                                <source src="mov_bbb.mp4" type="video/mp4">
+                                <source src="mov_bbb.ogg" type="video/ogg">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // // Open the Modal
+        // function openModal() {
+        //     document.getElementById("myModal").style.display = "block";
+        // }
+
+        // // Close the Modal
+        // function closeModal() {
+        //     document.getElementById("myModal").style.display = "none";
+        // }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>

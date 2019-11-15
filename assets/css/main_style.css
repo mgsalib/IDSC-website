@@ -13,6 +13,7 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("view_details.css");
+@import url("albums.css");
 
 /* HTML tags ============================== */
 html {
@@ -180,6 +181,13 @@ body {
     margin: -18px 0 0 5px;
 }
 
+.btn>i {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 24px;
+}
+
 .btn_cyan {
     background-color: rgb(203, 32, 40);
     color: rgb(255, 255, 255);
@@ -337,8 +345,8 @@ body {
 .archive_view>a>span {
     display: inline-block;
     overflow: hidden;
-    max-width: 114px;
-    max-height: 114px;
+    width: 114px;
+    height: 114px;
 }
 
 .archive_view>span.border {
@@ -347,7 +355,7 @@ body {
 }
 
 .archive_view>a.largeIMG {
-    max-width: 175px;
+    width: 175px !important;
 }
 
 .archive_view>a.largeIMG+ul {
@@ -355,7 +363,7 @@ body {
 }
 
 .archive_view>a.largeIMG>span {
-    max-width: 100%;
+    width: 100%;
 }
 
 .archive_view>span.border>[day] {

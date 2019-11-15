@@ -1,0 +1,68 @@
+<div class="infograhs container-fluid content_margin">
+
+    <!-- breadcrumb -->
+    <div class="row border border_gray-10 mb-3">
+        <nav class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="#">الوسائط التكنولوجية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">أنفوجراف</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- page details content -->
+    <div class="container">
+
+        <!-- page title -->
+        <div class="page_title d-flex justify-content-center">
+            <h2>أنفوجراف</h2>
+        </div>
+
+        <!-- Images albums -->
+        <div class="row">
+            <div class="archive_view d-flex flex-row col-12 col-sm-6 my-3">
+                <a href="#" class="largeIMG" data-toggle="modal" data-target="#myModal" onclick="currentSlide(1)">
+                    <span>
+                        <img src="../assets/images/team_work/team_member_01.jpg" alt="Expert_01" />
+                    </span>
+                </a>
+                <ul>
+                    <li archive_view_name><a href="#" data-toggle="modal" data-target="#myModal"
+                            onclick="currentSlide(1)">الأسم بالكامل</a></li>
+                    <li archive_view_title>الوظيفة الحالية</li>
+                    <li archive_view_subtitle>عنوان فرعي</li>
+                    <li archive_view_date>99.99.9999</li>
+                    <li archive_view_social>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myModal"
+        aria-hidden="true">
+
+        <div class="lightbox modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Your infograhs data here
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
