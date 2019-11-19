@@ -9,7 +9,7 @@
 }
 
 .demo {
-    max-height: 100px;
+    max-height: 175px;
     overflow: hidden;
     margin: 0px 0px 15px 0px;
 
@@ -55,4 +55,8 @@
 
 .lightbox a.next {
     left: 45px;
+}
+
+[dir=rtl] .modal-header .close {
+    margin: -1rem auto -1rem -1rem;
 }
