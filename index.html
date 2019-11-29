@@ -17,7 +17,7 @@
     <div id="main_header"></div>
 
     <!-- master content -->
-    <div id="main_content"></div>
+    <div id="main_content" class="content_space"></div>
 
     <!-- master header -->
     <div id="main_footer"></div>
@@ -33,19 +33,6 @@
 
     <!-- load external pages -->
     <script src="assets/js/jquery.includeHTML.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // load external html pages
-            $("#main_header").loadHTML('pages/header.html');
-            $("#main_content").loadHTML('pages/home.html');
-            $("#main_footer").loadHTML('pages/footer.html');
-        });
-
-        function PagesNavigation (evt) {
-            var PageName = evt.dataset.pagename;
-            $("#main_content").loadHTML('pages/'+ PageName +'.html');
-        }
-    </script>
 
     <!-- wow animation -->
     <script src="assets/js/wow.min.js"></script>
@@ -56,19 +43,6 @@
     <!-- swiper js -->
     <script src="assets/js/swiper.min.js"></script>
     <!-- script -->
-    
-    <script>
-        // scrolling header
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > $(window).height() / 4) {
-                $("#main_header").addClass("scroll_navbar").fadeIn;
-                // $('.scroll_navbar').fadeOut();
-            } else {
-                $("#main_header").removeClass("scroll_navbar").fadeOut;
-                // $('.scroll_navbar').fadeIn();
-            }
-        });
-    </script>
 </body>
 
 </html>

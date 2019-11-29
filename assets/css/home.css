@@ -2,7 +2,7 @@
 
 /* swiper */
 .main_swiper {
-    height: 60vh;
+    height: 80vh;
 }
 
 .main_swiper .swiper-button-next,
@@ -63,12 +63,34 @@
     transition: all 0.3s ease-in-out;
 }
 
+.slide-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    -webkit-filter: saturate(100%) grayscale(0%) brightness(35%) contrast(100%);
+}
+
+.slide-img img {
+    height: 100%;
+    max-width: none;
+}
+
+@media (min-width: 992px) {
+    .slide-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .main_swiper .text {
     position: absolute;
-    bottom: 41px;
-    padding: 16px 32px;
-    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    bottom: 40px;
+    padding: 16px;
     text-align: right;
+    z-index: 1;
 }
 
 [dir=ltr] .main_swiper .text {
@@ -80,64 +102,51 @@
     font-size: 14px;
     margin: 0px;
     line-height: 22px;
+    font-weight: 100;
 }
 
 .main_swiper .text>h3 {
     color: rgba(255, 255, 255);
-    font-size: 16px;
+    font-size: 24px;
     margin: 0px;
-    line-height: 24px;
+    line-height: 32px;
+    text-shadow: 0 1px 3px #000000;
 }
 
 .main_swiper .text>span {
-    color: rgb(179, 179, 179);
+    color: rgb(72, 197, 181);
     font-size: 14px;
     line-height: 22px;
 }
 
 @media (min-width: 576px) {
     .main_swiper .text {
+        position: relative;
+        bottom: auto;
         width: calc(100% - 100px);
     }
 }
 
 @media (min-width: 768px) {
 
-    .main_swiper .text {
-        left: 58px;
-        width: calc(100% - 30%);
+    .main_swiper .text>span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .main_swiper .text>h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .main_swiper .text>label {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     [dir=ltr] .main_swiper .text {
         right: 58px;
         left: auto;
-    }
-
-    .main_swiper .text>span {
-        position: absolute;
-        display: block;
-        top: -16px;
-        right: -50px;
-        background-color: rgb(203, 32, 40);
-    }
-
-    .main_swiper .text>span>span {
-        display: block;
-        text-align: center;
-        color: rgb(255, 255, 255);
-    }
-
-    .main_swiper .text>span>span:nth-child(1) {
-        font-family: HelveticaNeue;
-        font-size: 32px;
-        font-weight: bold;
-        line-height: 44px;
-    }
-
-    .main_swiper .text>span>span:nth-child(2) {
-        padding: 4px 8px;
-        background-color: rgba(0, 0, 0, 0.2);
-        font-size: 13px;
     }
 
 }
@@ -151,14 +160,7 @@
     }
 
     .main_swiper .text {
-        left: 90px;
-        bottom: 45px;
-        width: calc(100% - 50%);
-    }
-
-    [dir=ltr] .main_swiper .text {
-        right: 90px;
-        left: auto;
+        width: calc(100% - 150px);
     }
 }
 

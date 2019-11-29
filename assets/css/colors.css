@@ -18,9 +18,9 @@
 }
 
 /* background  ============================== */
-/* .bg_color_1 {
+.bg_color_1 {
     background-color: rgb(72, 197, 181) !important;
-} */
+}
 
 .bg_color_2 {
     background-color: rgb(223, 181, 11) !important;
@@ -79,9 +79,9 @@
 }
 
 /* text color  ============================== */
-/* .txt_color_1 {
+.txt_color_1 {
     color: rgb(72, 197, 181) !important;
-} */
+}
 
 .txt_color_2 {
     color: rgb(223, 181, 11) !important;
@@ -140,6 +140,10 @@
 }
 
 /* border color  ============================== */
+.border_color_1 {
+    border-color: rgb(72, 197, 181) !important;
+}
+
 .border_color_2 {
     border-color: rgb(223, 181, 11) !important;
 }
@@ -194,4 +198,9 @@
 
 .border_black {
     border-color: rgb(0, 0, 0) !important;
+}
+
+.btn_cyan {
+    background-color: rgb(72, 197, 181);
+    color: rgb(255, 255, 255);
 }
