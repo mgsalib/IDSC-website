@@ -109,6 +109,7 @@ body {
     font-size: 24px;
     line-height: 32px;
     color: rgb(153, 153, 153);
+    font-weight: 100;
 }
 
 /* swiper JS */
@@ -172,6 +173,7 @@ body {
     margin: 0px;
     padding: 0px 32px 0px 64px;
     border-radius: 0px;
+    font-weight: 100;
 }
 
 .btn::after {
@@ -204,9 +206,12 @@ body {
 
 .btn>i {
     position: absolute;
-    top: 4px;
-    left: 12px;
-    font-size: 24px;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    line-height: 33px;
+    width: 33px;
+    text-align: center;
 }
 
 /* inputs */
@@ -226,7 +231,7 @@ body {
 .page_title h2 {
     position: relative;
     font-weight: bold;
-    color: rgba(223, 181, 11, 1);
+    color: rgba(72, 197, 181, 1);
     margin: 0px;
     line-height: 40px;
     text-align: center;
@@ -235,7 +240,7 @@ body {
 .page_title h2::after {
     content: "";
     position: absolute;
-    background-color: rgb(203, 32, 40);
+    background-color: rgb(223, 181, 11);
     left: -10%;
     right: -10%;
     height: 3px;
@@ -392,6 +397,11 @@ body {
 
 .president_mgs img {
     max-width: 265px;
+}
+
+.box_shadow {
+    -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* breakpoint ============================== */

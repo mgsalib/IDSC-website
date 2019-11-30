@@ -11,7 +11,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-image: url(../images/chevron.png);
+    background-image: url(../images/chevron_red.png);
     background-size: 35%;
 }
 
@@ -40,9 +40,11 @@
 }
 
 .swiper-pagination-bullet {
-    background: rgb(223, 181, 11);
+    width: 12px;
+    height: 12px;
+    outline: none;
+    background: rgb(77, 77, 77);
     opacity: 1;
-    border: 1px solid rgb(255, 255, 255);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -51,11 +53,12 @@
 }
 
 .main_swiper .swiper-pagination-bullet-active {
-    background-color: rgb(203, 32, 40);
+
+    background-color: rgb(72, 197, 181);
     opacity: 1;
     border: 0px;
-    -webkit-box-shadow: 0 0 12px 6px rgba(203, 32, 40, 0.7);
-    box-shadow: 0 0 12px 6px rgba(203, 32, 40, 0.7);
+    -webkit-box-shadow: 0 0 12px 6px rgba(72, 197, 181, 0.7);
+    box-shadow: 0 0 12px 6px rgba(72, 197, 181, 0.7);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -70,6 +73,7 @@
     bottom: 0px;
     left: 0px;
     -webkit-filter: saturate(100%) grayscale(0%) brightness(35%) contrast(100%);
+    background-size: cover;
 }
 
 .slide-img img {
@@ -385,7 +389,7 @@
     bottom: 0px;
     width: 45px;
     height: 45px;
-    background-color: rgb(203, 32, 40);
+    background-color: rgb(72, 197, 181);
     padding: 8px;
     background-size: auto 29px;
     background-image: url('../images/chevron.png');

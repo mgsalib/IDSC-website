@@ -200,7 +200,33 @@
     border-color: rgb(0, 0, 0) !important;
 }
 
+/* buttons color  ============================== */
 .btn_cyan {
     background-color: rgb(72, 197, 181);
+    color: rgb(255, 255, 255);
+}
+
+.btn_cyan:hover,
+.btn_cyan:focus {
+    color: rgb(255, 255, 255);
+}
+
+.btn_red {
+    background-color: rgb(203, 32, 40);
+    color: rgb(255, 255, 255);
+}
+
+.btn_red:hover,
+.btn_red:focus {
+    color: rgb(255, 255, 255);
+}
+
+.btn_gold {
+    background-color: rgb(223, 181, 11);
+    color: rgb(255, 255, 255);
+}
+
+.btn_gold:hover,
+.btn_red:focus {
     color: rgb(255, 255, 255);
 }
