@@ -404,6 +404,13 @@ body {
     box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
 }
 
+.rounded-right {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+}
+
 /* breakpoint ============================== */
 
 /* medium devices (tablets, 768px and up) */
