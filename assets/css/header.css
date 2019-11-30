@@ -40,6 +40,10 @@
     padding: 0px;
 }
 
+.btn_lang img {
+    width: 35px;
+}
+
 li.dropdown:hover>div.dropdown-menu {
     display: inline-flex;
 }
