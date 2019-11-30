@@ -5,6 +5,12 @@
     height: 80vh;
 }
 
+.main_swiper .swiper-slide {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+}
+
 .main_swiper .swiper-button-next,
 .main_swiper .swiper-button-prev {
     background-color: rgba(0, 0, 0, 0.75);
@@ -164,7 +170,8 @@
     }
 
     .main_swiper .text {
-        width: calc(100% - 150px);
+        width: calc(100% - 50%);
+        padding-right: 90px;
     }
 }
 
