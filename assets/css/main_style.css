@@ -25,6 +25,7 @@ body {
     text-align: right;
     font-family: GESSTwo, HelveticaNeue;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 /* utilities classes ============================== */

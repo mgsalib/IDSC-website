@@ -4,7 +4,7 @@
     right: 0px;
     bottom: auto;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 1);
     z-index: 3;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -145,8 +145,12 @@ li.dropdown:hover>div.dropdown-menu {
 
 .scroll_navbar {
     background-color: rgb(255, 255, 255) !important;
-    -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
+    -khtml-box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
+    -ms-box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
+    -o-box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .075);
 }
 
 .scroll_navbar .navbar {
@@ -184,9 +188,6 @@ li.dropdown:hover>div.dropdown-menu {
 
 /* large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #main_header {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
 
     .navbar-brand>img {
         height: 34px;
