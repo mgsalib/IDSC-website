@@ -177,46 +177,14 @@
 
 /* most important releases  */
 .release_box {
-    height: 267px;
-    margin-top: 50px;
-    padding: 0px 30px 30px 30px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
+    max-height: 350px;
+    position: relative;
+    margin-top: 48px;
+    padding: 64px 16px 16px 16px;
     cursor: pointer;
 }
 
-.release_box::before {
-    content: " ";
-    position: absolute;
-    width: calc(100% - 30px);
-    height: calc(100% - 20px);
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4d4d4d+35,4d4d4d+100&0.6+35,0+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 95%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 95%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 95%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#994d4d4d', endColorstr='#004d4d4d', GradientType=0);
-    /* IE6-9 */
+.release_box * {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -226,13 +194,10 @@
 
 .release_box>span {
     position: absolute;
-    top: 50px;
-    height: 260px;
-    font-size: 35px;
-    color: rgb(255, 255, 255);
+    top: -35px;
+    left: calc((100% - 70px)/2);
     width: 70px;
     height: 70px;
-    margin: -35px auto 0px;
     background-color: rgb(223, 181, 11);
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -243,104 +208,82 @@
 
 .release_box>span>img {
     width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 45%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    margin: -20px;
+    height: auto;
+    margin: 15px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
-    font-size: 35px;
-    text-align: center;
 }
 
-.release_box>aside {
-    text-align: center;
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
-    z-index: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.release_box>.release_img {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0;
 }
 
 .release_box>aside>h3 {
     display: inline-block;
-    margin: 69px 0px 16px 0px;
-    text-align: center;
-    color: rgb(255, 255, 255);
     font-size: 18px;
     line-height: 36px;
-    border-bottom: 1px solid rgb(102, 102, 102);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    padding: 0px 0px;
+    border-bottom: 3px solid rgb(102, 102, 102);
 }
 
 .release_box>aside>h4 {
-    text-align: center;
-    color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
     line-height: 26px;
+    color: rgb(179, 179, 179);
     margin-bottom: 16px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
-.release_box>aside>p:first-of-type {
-    color: rgb(153, 153, 153);
-    margin: 0px 0px 69px 0px;
+.release_box>aside>p {
+    color: rgb(203, 32, 40);
+    margin: 0px 0px 16px 0px;
     font-size: 16px;
     text-align: center;
 }
 
-.release_box>aside>p:last-of-type {
-    color: rgb(153, 153, 153);
-    margin: 0px 0px 8px 0px;
-    font-size: 16px;
-    text-align: center;
+.release_box:hover>.release_img {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
 }
 
-.release_box:hover {
-    padding: 0px !important;
+.release_box:hover>.release_img::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgb(0, 0, 0));
+    opacity: 0.90;
 }
 
-.release_box:hover::before {
-    background: transparent;
+.release_box:hover>aside>h3 {
+    padding: 0px 32px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(72, 197, 181);
 }
 
-.release_box:hover>aside {
-    background-color: rgb(55, 55, 55);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.release_box:hover>aside>p {
+    color: rgb(230, 230, 230);
 }
 
-.release_box:hover>aside>h3,
-.release_box:hover>aside>p:first-of-type {
-    margin: 0px;
-    opacity: 0;
-    height: 1px;
-}
-
-.release_box:hover>aside>h4 {
-    margin: 30px 0px 8px 0px;
-}
 
 .event_swiper .swiper-slide {
     height: 90vh;
@@ -611,42 +554,70 @@
     flex-direction: column;
 }
 
-.article_swiper .swiper-slide>img {
+.article_box {
     width: 100%;
-    height: auto;
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 
-.article_swiper .swiper-slide>div {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    padding: 8px 16px;
+.article_box * {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.article_swiper .swiper-slide>div>h3 {
+.article_img {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.article_info {
+    bottom: -360px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgb(0, 0, 0));
+    opacity: 0.00;
+}
+
+.article_info>h3 {
     font-size: 18px;
-    font-weight: bold;
     line-height: 26px;
-    color: rgb(163, 63, 42);
-    margin-bottom: 4px;
-    text-align: right;
 }
 
-.article_swiper .swiper-slide>div>p {
+.article_info>p {
     font-size: 16px;
     line-height: 24px;
-    color: rgb(0, 0, 0);
-    margin: 0px 0px 4px 0px;
-    text-align: right;
+    font-weight: normal;
 }
 
-.article_swiper .swiper-slide>div>span {
+.article_info>span {
+    font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    display: block;
-    color: rgb(153, 153, 153);
-    margin: 0px 0px 4px 0px;
-    text-align: right;
 }
+
+.article_box:hover>.article_img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.article_box:hover>.article_info {
+    bottom: 0px;
+    opacity: 0.90;
+}
+
 
 [dir=ltr] .article_swiper .swiper-slide>div>h3,
 [dir=ltr] .article_swiper .swiper-slide>div>p,
