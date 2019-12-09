@@ -11,6 +11,26 @@
     -webkit-box-align: start;
 }
 
+.main_swiper .text>span {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.main_swiper .text>h3 {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.main_swiper .text>label {
+    -webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+}
+
+.main_swiper .text>button {
+    -webkit-animation-delay: 1.75s;
+    animation-delay: 1.75s;
+}
+
 .main_swiper .swiper-button-next,
 .main_swiper .swiper-button-prev {
     background-color: rgba(0, 0, 0, 0.75);
@@ -170,8 +190,13 @@
     }
 
     .main_swiper .text {
-        width: calc(100% - 50%);
+        width: calc(100% - 35%);
         padding-right: 90px;
+    }
+
+    [dir=ltr] .main_swiper .text {
+        padding-left: 162px;
+        padding-right: 0px;
     }
 }
 
@@ -245,7 +270,7 @@
 }
 
 .release_box>aside>p {
-    color: rgb(203, 32, 40);
+    color: rgb(77, 77, 77);
     margin: 0px 0px 16px 0px;
     font-size: 16px;
     text-align: center;
@@ -302,7 +327,13 @@
     position: relative;
 }
 
+
+.event_swiper .event_caption>h3 {
+    font-size: 22px;
+}
+
 .event_swiper .event_caption>p {
+    display: none;
     font-size: 14px;
     color: rgb(153, 153, 153);
     font-weight: 100;
@@ -312,11 +343,11 @@
 .event_swiper .event_caption>.swiper-button-prev {
     top: auto;
     bottom: 0px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: rgb(72, 197, 181);
     padding: 8px;
-    background-size: auto 15px;
+    background-size: auto 20px;
     background-image: url('../images/chevron.png');
 }
 
@@ -326,7 +357,7 @@
 
 .event_swiper .event_caption>.swiper-button-prev {
     right: auto;
-    left: 50px;
+    left: 70px;
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -341,6 +372,13 @@
 }
 
 @media (min-width: 768px) {
+    .event_swiper .event_caption>h3 {
+        font-size: 28px;
+    }
+
+    .event_swiper .event_caption>p {
+        display: block;
+    }
 
     .event_swiper .swiper-slide .event_img,
     .event_swiper .swiper-slide .event_caption {
@@ -363,8 +401,8 @@
 .team_work_card>.member_card>img {
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
-    opacity: 0.5;
+    filter: grayscale(90%);
+    opacity: 0.8;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
@@ -448,8 +486,25 @@
 
 .team_work_card>.member_card>.member_caption>ul>li {
     display: inline-block;
-    width: 32px;
-    line-height: 32px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 0px 8px;
+}
+
+.team_work_card>.member_card>.member_caption>ul>li:nth-child(1) {
+    background-color: rgb(59, 89, 152);
+}
+
+.team_work_card>.member_card>.member_caption>ul>li:nth-child(2) {
+    background-color: rgb(0, 172, 238);
+}
+
+.team_work_card>.member_card>.member_caption>ul>li:nth-child(3) {
+    background-color: rgb(14, 118, 168);
+}
+
+.team_work_card>.member_card>.member_caption>ul>li:nth-child(4) {
+    background-color: rgb(196, 48, 43);
 }
 
 .team_work_card>.member_card>.member_caption>ul>li>a {
@@ -457,6 +512,10 @@
     text-align: center;
     font-size: 16px;
     color: rgb(255, 255, 255);
+}
+
+.team_work_card>.member_card>.member_caption>ul>li>a>i {
+    line-height: 36px;
 }
 
 .member_card:hover>img {
@@ -502,7 +561,7 @@
 
 .data_info_box>img {
     width: 100%;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -530,13 +589,12 @@
     height: 1px;
     bottom: 0px;
     right: 0px;
-    background-color: rgb(163, 63, 42);
+    background-color: rgb(223, 181, 11);
 }
 
 [dir=ltr] .data_info_box>aside>h3::after {
     left: 0px;
     right: auto;
-    background-color: rgb(163, 63, 42);
 }
 
 .data_info_box>aside>p {
@@ -588,12 +646,12 @@
     opacity: 0.00;
 }
 
-.article_info>h3 {
+.article_info>a:first-of-type {
     font-size: 18px;
     line-height: 26px;
 }
 
-.article_info>p {
+.article_info>a:last-of-type {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
@@ -660,6 +718,8 @@
 .video_box iframe {
     width: 100%;
     height: calc(100% - 20%);
+    -webkit-box-shadow: 0 35px 35px rgba(0, 0, 0, .25);
+    box-shadow: 0 35px 35px rgba(0, 0, 0, .25);
 }
 
 .video_box>div>table {
@@ -717,7 +777,7 @@
 }
 
 .quotes_swiper .swiper-slide>img {
-    width: auto;
+    width: 200px;
     max-height: 200px;
     border-radius: 50%;
     border: 5px solid rgb(255, 255, 255);

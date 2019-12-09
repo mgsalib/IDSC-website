@@ -3,7 +3,7 @@
 }
 
 .mySlides {
-    height: 400px;
+    height: auto;
     overflow: hidden;
     text-align: center;
 }
@@ -31,7 +31,7 @@
     width: 45px;
     height: 45px;
     z-index: 10;
-    top: 200px;
+    top: 50%;
     font-size: 24px;
     padding: 9px 4px;
     text-align: center;
@@ -50,11 +50,21 @@
 }
 
 .lightbox a.prev {
-    right: 45px;
+    right: 15px;
 }
 
 .lightbox a.next {
-    left: 45px;
+    left: 15px;
+}
+
+.album_thumbnail {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .album_thumbnail {
+        display: block;
+    }
 }
 
 [dir=rtl] .modal-header .close {
