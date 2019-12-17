@@ -29,7 +29,7 @@ body {
     overflow-x: hidden;
 }
 
-/* bootstarp conatiner ============================== */
+/* bootstrap container ============================== */
 @media (min-width: 1349px) {
     .container {
         max-width: 1320px;
@@ -201,6 +201,7 @@ body {
     padding: 0px 32px 0px 64px;
     border-radius: 0px;
     font-weight: 100;
+    outline: none;
 }
 
 .btn::after {

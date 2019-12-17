@@ -209,6 +209,7 @@
 .btn_cyan:hover,
 .btn_cyan:focus {
     color: rgb(255, 255, 255);
+    box-shadow: none;
 }
 
 .btn_red {

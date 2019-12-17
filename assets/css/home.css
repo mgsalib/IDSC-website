@@ -117,7 +117,7 @@
 .main_swiper .text {
     position: absolute;
     width: 100%;
-    bottom: 40px;
+    bottom: 80px;
     padding: 16px;
     text-align: right;
     z-index: 1;
@@ -202,7 +202,7 @@
 
 /* most important releases  */
 .release_box {
-    max-height: 350px;
+    min-height: 275px;
     position: relative;
     margin-top: 48px;
     padding: 64px 16px 16px 16px;
@@ -363,6 +363,19 @@
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+@media (max-width:576px) {
+
+    .event_swiper .event_caption>.swiper-button-next,
+    .event_swiper .event_caption>.swiper-button-prev {
+        width: 45px;
+        height: 45px;
+    }
+
+    .event_swiper .event_caption>.swiper-button-prev {
+        left: 45px;
+    }
 }
 
 .event_swiper .swiper-slide .event_img div {
@@ -546,7 +559,6 @@
 .data_info_box {
     display: block;
     position: relative;
-    cursor: pointer;
 }
 
 .data_info_box:after {

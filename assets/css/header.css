@@ -90,9 +90,25 @@ li.dropdown:hover>div.dropdown-menu {
     transition: all 0.3s ease-in-out;
 }
 
+.dropdown-toggle::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    border: 0px;
+    margin-right: 4px;
+    vertical-align: 0px;
+
+}
+
+[dir=ltr] .dropdown-toggle::after {
+    margin-right: 0px;
+    margin-left: 4px;
+
+}
+
 .nav-link:hover,
 .nav-link:focus {
-    color: rgb(72, 197, 181) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .nav-link:hover::before,
@@ -208,6 +224,11 @@ li.dropdown:hover>div.dropdown-menu {
 
 .scroll_navbar .nav-link {
     color: rgba(0, 0, 0, 1);
+}
+
+.scroll_navbar .nav-link:hover,
+.scroll_navbar .nav-link:focus {
+    color: rgba(0, 0, 0, 1) !important;
 }
 
 .scroll_navbar .dropdown-toggle::after {
