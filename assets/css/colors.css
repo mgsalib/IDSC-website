@@ -1,139 +1,171 @@
 /* IDSC variables  ============================== */
 :root {
-    --color_1: 72, 197, 181;
+    /* --color_1: 72, 197, 181; 
     --color_2: 223, 181, 11;
-    --color_3: 203, 32, 40;
+    --color_3: 203, 32, 40; */
 
-    --white: 255, 255, 255;
-    --gray-5: 242, 242, 242;
-    --gray-10: 230, 230, 230;
-    --gray-20: 204, 204, 204;
-    --gray-30: 179, 179, 179;
-    --gray-40: 153, 153, 153;
-    --gray-50: 128, 128, 128;
-    --gray-60: 102, 102, 102;
-    --gray-70: 77, 77, 77;
-    --gray-80: 51, 51, 51;
-    --gray-90: 26, 26, 26;
-    --black: 0, 0, 0;
+    --color-1: rgb(158, 31, 99);
+    --color-2: rgb(223, 181, 11);
+    --color-3: rgb(73, 12, 49);
+    --gray-0: rgb(255, 255, 255);
+    --gray-5: rgb(242, 242, 242);
+    --gray-10: rgb(230, 230, 230);
+    --gray-20: rgb(204, 204, 204);
+    --gray-30: rgb(179, 179, 179);
+    --gray-40: rgb(153, 153, 153);
+    --gray-50: rgb(128, 128, 128);
+    --gray-60: rgb(102, 102, 102);
+    --gray-70: rgb(77, 77, 77);
+    --gray-80: rgb(51, 51, 51);
+    --gray-90: rgb(26, 26, 26);
+    --gray-100: rgb(0, 0, 0);
 }
 
 /* background  ============================== */
 .bg_color_1 {
-    background-color: rgb(72, 197, 181) !important;
+    background-color: rgb(158, 31, 99) !important;
+    background-color: var(--color-1) !important;
 }
 
 .bg_color_2 {
     background-color: rgb(223, 181, 11) !important;
+    background-color: var(--color-2) !important;
 }
 
 .bg_color_3 {
-    background-color: rgb(203, 32, 40) !important;
+    background-color: rgb(73, 12, 49) !important;
+    background-color: var(--color-3) !important;
 }
 
 .bg_white {
     background-color: rgb(255, 255, 255) !important;
+    background-color: var(--gray-0) !important;
 }
 
 .bg_gray-5 {
     background-color: rgb(242, 242, 242) !important;
+    background-color: var(--gray-5) !important;
 }
 
 .bg_gray-10 {
     background-color: rgb(230, 230, 230) !important;
+    background-color: var(--gray-10) !important;
 }
 
 .bg_gray-20 {
     background-color: rgb(204, 204, 204) !important;
+    background-color: var(--gray-20) !important;
 }
 
 .bg_gray-30 {
     background-color: rgb(179, 179, 179) !important;
+    background-color: var(--gray-30) !important;
 }
 
 .bg_gray-40 {
     background-color: rgb(153, 153, 153) !important;
+    background-color: var(--gray-40) !important;
 }
 
 .bg_gray-50 {
     background-color: rgb(128, 128, 128) !important;
+    background-color: var(--gray-50) !important;
 }
 
 .bg_gray-60 {
     background-color: rgb(102, 102, 102) !important;
+    background-color: var(--gray-60) !important;
 }
 
 .bg_gray-70 {
     background-color: rgb(77, 77, 77) !important;
+    background-color: var(--gray-70) !important;
 }
 
 .bg_gray-80 {
     background-color: rgb(51, 51, 51) !important;
+    background-color: var(--gray-80) !important;
 }
 
 .bg_gray-90 {
     background-color: rgb(26, 26, 26) !important;
+    background-color: var(--gray-90) !important;
 }
 
 .bg_black {
     background-color: rgb(0, 0, 0) !important;
+    background-color: var(--gray-100) !important;
 }
 
 /* text color  ============================== */
 .txt_color_1 {
-    color: rgb(72, 197, 181) !important;
+    color: rgb(158, 31, 99) !important;
+    color: var(--color-1) !important;
 }
 
 .txt_color_2 {
     color: rgb(223, 181, 11) !important;
+    color: var(--color-2) !important;
 }
 
 .txt_color_3 {
-    color: rgb(203, 32, 40) !important;
+    color: rgb(73, 12, 49) !important;
+    color: var(--color-3) !important;
 }
 
 .txt_white {
     color: rgb(255, 255, 255) !important;
+    color: var(--gray-0) !important;
 }
 
 .txt_gray-5 {
     color: rgb(242, 242, 242) !important;
+    color: var(--gray-5) !important;
 }
 
 .txt_gray-10 {
     color: rgb(230, 230, 230) !important;
+    color: var(--gray-10) !important;
 }
 
 .txt_gray-20 {
     color: rgb(204, 204, 204) !important;
+    color: var(--gray-20) !important;
 }
 
 .txt_gray-30 {
     color: rgb(179, 179, 179) !important;
+    color: var(--gray-30) !important;
 }
 
 .txt_gray-40 {
     color: rgb(153, 153, 153) !important;
+    color: var(--gray-40) !important;
 }
 
 .txt_gray-50 {
     color: rgb(128, 128, 128) !important;
+    color: var(--gray-50) !important;
 }
 
 .txt_gray-60 {
     color: rgb(102, 102, 102) !important;
+    color: var(--gray-60) !important;
 }
 
 .txt_gray-70 {
     color: rgb(77, 77, 77) !important;
+    color: var(--gray-70) !important;
 }
 
 .txt_gray-80 {
     color: rgb(51, 51, 51) !important;
+    color: var(--gray-80) !important;
 }
 
 .txt_gray-90 {
     color: rgb(26, 26, 26) !important;
+    color: var(--gray-90) !important;
 }
 
 .txt_black {
@@ -142,7 +174,7 @@
 
 /* border color  ============================== */
 .border_color_1 {
-    border-color: rgb(72, 197, 181) !important;
+    border-color: rgb(158, 31, 99) !important;
 }
 
 .border_color_2 {
@@ -150,85 +182,106 @@
 }
 
 .border_color_3 {
-    border-color: rgb(203, 32, 40) !important;
+    border-color: rgb(73, 12, 49) !important;
 }
 
 .border_white {
     border-color: rgb(255, 255, 255) !important;
+    border-color: var(--gray-0) !important;
 }
 
 .border_gray-5 {
     border-color: rgb(242, 242, 242) !important;
+    border-color: var(--gray-5) !important;
 }
 
 .border_gray-10 {
     border-color: rgb(230, 230, 230) !important;
+    border-color: var(--gray-10) !important;
 }
 
 .border_gray-20 {
     border-color: rgb(204, 204, 204) !important;
+    border-color: var(--gray-20) !important;
 }
 
 .border_gray-30 {
     border-color: rgb(179, 179, 179) !important;
+    border-color: var(--gray-30) !important;
 }
 
 .border_gray-40 {
     border-color: rgb(153, 153, 153) !important;
+    border-color: var(--gray-40) !important;
 }
 
 .border_gray-50 {
     border-color: rgb(128, 128, 128) !important;
+    border-color: var(--gray-50) !important;
 }
 
 .border_gray-60 {
     border-color: rgb(102, 102, 102) !important;
+    border-color: var(--gray-60) !important;
 }
 
 .border_gray-70 {
     border-color: rgb(77, 77, 77) !important;
+    border-color: var(--gray-70) !important;
 }
 
 .border_gray-80 {
     border-color: rgb(51, 51, 51) !important;
+    border-color: var(--gray-80) !important;
 }
 
 .border_gray-90 {
     border-color: rgb(26, 26, 26) !important;
+    border-color: var(--gray-90) !important;
 }
 
 .border_black {
     border-color: rgb(0, 0, 0) !important;
+    border-color: var(--gray-100) !important;
 }
 
 /* buttons color  ============================== */
 .btn_cyan {
-    background-color: rgb(72, 197, 181);
+    background-color: rgb(158, 31, 99);
     color: rgb(255, 255, 255);
+    background-color: var(--color-1);
+    color: var(--gray-0);
 }
 
 .btn_cyan:hover,
 .btn_cyan:focus {
     color: rgb(255, 255, 255);
+    color: var(--gray-0);
     box-shadow: none;
 }
 
 .btn_red {
-    background-color: rgb(203, 32, 40);
+    background-color: rgb(73, 12, 49);
     color: rgb(255, 255, 255);
+    background-color: var(--color-3);
+    color: var(--gray-0);
 }
 
 .btn_red:hover,
 .btn_red:focus {
     color: rgb(255, 255, 255);
+    color: var(--gray-0);
 }
 
 .btn_gold {
     background-color: rgb(223, 181, 11);
     color: rgb(255, 255, 255);
+    background-color: var(--color-2);
+    color: var(--gray-0);
 }
 
 .btn_gold:hover,
 .btn_red:focus {
     color: rgb(255, 255, 255);
+    color: var(--gray-0);
 }
