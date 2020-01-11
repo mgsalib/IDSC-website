@@ -1,11 +1,12 @@
 .expert_details_header {
-    border-bottom: 3px solid rgb(204, 204, 204);
+    /*border-bottom: 3px solid rgb(203, 32, 40);*/
+    border-bottom: 3px solid rgb(223, 181, 11);
     margin-bottom: 30px;
 }
 
 .expert_details_header>div>img {
-    max-width: 114px;
-    max-height: 114px;
+    width: 114px;
+    height: 114px;
     margin-bottom: 8px;
 }
 
